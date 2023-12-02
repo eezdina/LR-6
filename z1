@@ -1,0 +1,10 @@
+function f(x, C) {
+  var absX = Math.abs(x);
+  var Y = Number(C.toString() + absX.toString());
+  return Y
+}
+
+var x = Number(prompt("x = "));
+var C = Number(prompt("C = "));
+var result = f(x, C);
+alert(result);
