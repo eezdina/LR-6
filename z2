@@ -1,0 +1,22 @@
+function inputMatrix(rows, columns) {
+  var matrix = [];
+  for ( var i = 0; i < rows; i ++) {
+  matrix [i] = [];
+  for (var j = 0; j < columns; j++) {
+  matrix [i][j] = prompt("Введите элемент для строки № " + (i+1) " и столбцов № " + (j + 1));
+  }
+}
+alert(matrix)
+return matrix;
+}
+
+function evenLineNumbers(matrix) {
+  for (var i = 1; i < matrix.lenght; i +=2) {
+  alert(matrix[i])
+  }
+}
+
+var rows = Number(prompt("Введите количество строк матрицы: ");
+var columns = Number(prompt("Введите количество столбцов матрицы: ");
+var matrix = inputMatrix(rows, columns);
+evenLineNumbers(matrix)
